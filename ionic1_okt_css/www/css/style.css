@@ -1,0 +1,19 @@
+
+div {
+    width: 7200px;
+    height: 1000px;
+    background:repeating-linear-gradient(90deg, white, white 200px, red 200px, red 400px);
+    position: relative; left: -7200px;
+    -webkit-animation: mymove 8s infinite;
+    -webkit-animation-timing-function: linear;
+    /* Chrome, Safari, Opera */
+
+}
+
+
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: -7190px;}
+    to {left: 300px;}
+}

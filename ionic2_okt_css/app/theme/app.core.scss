@@ -1,0 +1,42 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+
+@import "../pages/home/home";
+
+
+div {
+    width: 7200px;
+    height: 1000px;
+    background:repeating-linear-gradient(90deg, white, white 200px, red 200px, red 400px);
+    font-weight: bold;
+    position: relative; left: -7200px;
+    -webkit-animation: mymove 12s infinite; /* Chrome, Safari, Opera */
+
+}
+
+/* Chrome, Safari, Opera */
+#div1 {-webkit-animation-timing-function: linear;}
+
+
+/* Standard syntax */
+#div1 {
+margin-top: 0px;
+animation: mymove 6s infinite;
+animation-timing-function: linear;}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: -7190px;}
+    to {left: 300px;}
+}
